@@ -38,6 +38,12 @@ public class PocController {
 		return "working";
 	}
 
+	@GetMapping("/p")
+	public String ping1() {
+		 logger.info("Process started");
+		return "working";
+	}
+	
 	@PostMapping("/saveEmployee")
 	public ResponseEntity<?>saveEmployee(@RequestBody EmployeeDto e) throws ResourceNotSavedException{
 		try{
