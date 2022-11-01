@@ -43,6 +43,11 @@ public class PocController {
 		System.out.println("ok");
 		return "ok";
 	}
+	@GetMapping("testing1")
+	public String getTest1(){
+		System.out.println("ok");
+		return "ok";
+	}
 	@PostMapping("/saveEmployee")
 	public ResponseEntity<?>saveEmployee(@RequestBody EmployeeDto e) throws ResourceNotSavedException{
 		try{
